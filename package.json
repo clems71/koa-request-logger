@@ -1,0 +1,31 @@
+{
+  "name": "koa-request-logger",
+  "version": "0.9.0",
+  "main": "lib/index.js",
+  "author": "Clement Jacob <clems71@gmail.com>",
+  "repository": "https://github.com/clems71/koa-request-logger.git",
+  "scripts": {
+    "precommit": "lint-staged",
+    "test": "nodemon test/sample.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bytes": "^2.5.0",
+    "geoip-lite": "^1.2.1",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "husky": "^0.13.3",
+    "koa": "^2.2.0",
+    "koa-route": "^3.2.0",
+    "lint-staged": "^3.4.1",
+    "nodemon": "^1.11.0",
+    "prettier": "^1.3.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write --single-quote",
+      "git add"
+    ]
+  }
+}
