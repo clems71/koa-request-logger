@@ -3,8 +3,8 @@ const route = require('koa-route');
 
 const app = new Koa();
 
-const koaRequestLogger = require('../src');
-const consoleBackend = require('../src/backends/console');
+const koaRequestLogger = require('..');
+const consoleBackend = require('../backends/console');
 
 // logger setup
 app.use(koaRequestLogger(consoleBackend()));
